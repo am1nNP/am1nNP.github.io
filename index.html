@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/Untitled.jpg" />
     <link
       href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css"
       rel="stylesheet"
@@ -44,16 +45,30 @@
           <span
             id="moon"
             class="hidden md:block rounded-full w-10 h-10 shadow-moon cursor-pointer"
-          ></span>
+          >
+            <svg
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 25"
+            >
+              <title>Moon</title>
+              <path
+                id="MoonSVG"
+                d="M24.86,15.53a.5.5,0,0,0-.57,0A10.71,10.71,0,0,1,9.57.79.5.5,0,0,0,9,0,12.77,12.77,0,1,0,25,16,.5.5,0,0,0,24.86,15.53Z"
+                fill="#0a2e6b"
+              ></path>
+            </svg>
+          </span>
           <div id="humburger" class="space-y-1 cursor-pointer md:hidden z-20">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+            <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
+            <div class="w-6 h-0.5 bg-black dark:bg-white"></div>
           </div>
         </div>
         <ul
           id="menu"
-          class="hidden bg-indigo-900 absolute right-0 top-0 w-full p-10 rounded-b-full space-y-10 text-center text-white"
+          class="hidden bg-gray-100 absolute right-0 top-0 w-full p-10 rounded-b-full space-y-10 text-center text-indigo-900 dark:bg-indigo-900 dark:text-white"
         >
           <li>
             <a id="hLink" href="#">خانه</a>
@@ -462,8 +477,7 @@
         </div>
       </div>
     </div>
-
-    <script src="./app.js"></script>
+    <script src="./app.js" type="module"></script>
     <script src="./autotyping.js"></script>
   </body>
 </html>
