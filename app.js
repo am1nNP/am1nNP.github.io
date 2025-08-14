@@ -18,7 +18,9 @@ hLinks.forEach((link) => {
 moon.addEventListener('click', () => {
   moon1.classList.toggle('dark');
   let res = moon1.classList.contains('dark');
-  res ? (moon.innerHTML = sunSVG) : (moon.innerHTML = moonSVG);
+  res
+    ? ((moon.innerHTML = sunSVG), menu.classList.remove('shadow'))
+    : ((moon.innerHTML = moonSVG), menu.classList.add('shadow'));
 });
 function m(id) {
   let obj = document.getElementById(id);
