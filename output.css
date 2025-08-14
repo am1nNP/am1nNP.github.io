@@ -663,7 +663,7 @@ video {
 }
 
 .h-10 {
-  height: 2.5rem;
+  height: 1.5rem;
 }
 
 .h-28 {
@@ -692,7 +692,7 @@ video {
 }
 
 .w-10 {
-  width: 2.5rem;
+  width: 1.5rem;
 }
 
 .w-10\/12 {
@@ -1235,7 +1235,10 @@ video {
   .md\:right-1\/4 {
     right: 25%;
   }
-
+  .small {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
   .md\:top-\[50\%\] {
     top: 50%;
   }
